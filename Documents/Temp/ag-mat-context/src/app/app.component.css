@@ -1,0 +1,21 @@
+.red {
+    background-color: #cc222244;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid{
+    width: 50%;
+    height: 50%
+}
+
+.dialog-btn{
+    margin-top: 20px;
+}

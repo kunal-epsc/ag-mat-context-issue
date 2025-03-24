@@ -1,0 +1,13 @@
+<div class="dialog-grid">
+  <ag-grid-angular
+    style="width: 90%; height: 90%"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [cellSelection]="true"
+    [allowContextMenuWithControlKey]="true"
+    [getContextMenuItems]="getContextMenuItems"
+    [rowData]="rowData"
+    [gridOptions]="gridOptions"
+    (gridReady)="onGridReady($event)"
+  />
+</div>

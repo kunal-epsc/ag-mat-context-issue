@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="grid">
+    <ag-grid-angular
+      style="width: 100%; height: 100%"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [cellSelection]="true"
+      [allowContextMenuWithControlKey]="true"
+      [getContextMenuItems]="getContextMenuItems"
+      [rowData]="rowData"
+      [gridOptions]="gridOptions"
+      (gridReady)="onGridReady($event)"
+    />
+  </div>
+
+  <button
+    class="dialog-btn"
+    mat-raised-button
+    color="primary"
+    (click)="openDialog()"
+  >
+    Open Grid In Dialog
+  </button>
+</div>
